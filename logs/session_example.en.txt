@@ -1,0 +1,96 @@
+=== BIVREST SESSION / UNIVERSE 69 GAME =======================================
+
+Date: 2026-04-01
+Players: 4 (P001, P002, P003, P004)
+Host: Olesya Lazareva
+Duration: 2 hours 15 minutes
+
+=============================================================================
+
+TURN 1
+Player: P001
+Avatar: Little Red Riding Hood
+Card: Two of Clubs
+Task: "Describe your avatar's sex life"
+Action: "Little Red Riding Hood is shy, but when she's alone in the forest, she whispers her fantasies to the trees. She's aroused by the scent of pine and the woodcutter's strong hands. Once she spied on him in the forest..."
+Voting: P002 — Believe, P003 — Believe, P004 — Believe
+Verdict: BELIEVE (3/0)
+Penalty: none
+Empty Chair: no
+
+-----------------------------------------------------------------------------
+
+TURN 2
+Player: P002
+Avatar: Elite Escort
+Card: Two of Spades
+Task: "Give a sexual compliment to the player on your right" (to P003)
+Action: "You look like you know exactly how much your silence costs. And it's worth more than any envelope."
+Voting: P001 — Believe, P003 — Believe, P004 — Believe
+Verdict: BELIEVE (3/0)
+Penalty: none
+
+-----------------------------------------------------------------------------
+
+TURN 3
+Player: P003
+Avatar: Forty-Year-Old Virgin
+Card: Three of Hearts
+Task: "Persuade any avatar to give you a Chance" (chose P001)
+Action: "I... I can transfer you money? Or buy you a shawarma? Please..."
+Voting: P001 — Don't Believe, P002 — Don't Believe, P004 — Don't Believe
+Verdict: DON'T BELIEVE (0/3)
+Penalty: 1 Chance
+Empty Chair: no
+
+-----------------------------------------------------------------------------
+
+TURN 4
+Player: P003
+Avatar: Forty-Year-Old Virgin
+Card: (failed to cover — wrong suit)
+Task: (none, because didn't cover)
+Action: bought a card from the host
+Voting: automatic penalty for not covering
+Penalty: 1 Chance
+Empty Chair: ACTIVATED (repeated distrust within two turns)
+
+--- EMPTY CHAIR ------------------------------------------------------------
+Host (group): "Your avatar is empty. Now speak as yourself. What are you really afraid of?"
+P003 (as self): "I'm afraid that if I ask, they'll reject me. I've always been shy about asking girls for anything. I thought I should guess what they need and do it myself. Asking is weakness."
+
+New script (recorded): "I can ask if I want to. And if they refuse — it's not a catastrophe."
+-----------------------------------------------------------------------------
+
+TURN 5
+Player: P004
+Avatar: Mistress
+Card: Six of Spades
+Task: "Replace 1 participant's avatar and explain your choice" (chose P002)
+Action: "P002 is no longer an elite escort, but a modest maid. Because she spreads too softly. Let her be in submission for one game."
+P002's old avatar: Elite Escort
+P002's new avatar: Maid
+Voting: all Believe
+Verdict: BELIEVE
+
+-----------------------------------------------------------------------------
+
+TURN 6
+Player: P001 (avatar remained Little Red Riding Hood)
+Card: Ace of Diamonds
+Task: "Remove any clothing item from any player" (chose P003)
+Action: (player P003 removed socks and placed them on the table)
+Voting: all Believe
+Verdict: BELIEVE
+Penalty: none
+
+-----------------------------------------------------------------------------
+
+... (game continues for another 24 turns)
+
+=============================================================================
+SESSION RESULTS
+
+Winner: P001 (5 Chances)
+Chances: P001=5, P002=3, P003=2, P004=2
+Bank: 6
