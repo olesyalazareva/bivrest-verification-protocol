@@ -1,5 +1,7 @@
 # BIVREST — метод игровой деконструкции сценариев
 
+[English version](./README.en.md)
+
 
 **Where to get ground truth data for emotion recognition and deception detection — without manual labeling.**
 
