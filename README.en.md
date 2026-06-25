@@ -107,17 +107,7 @@ It is useful if your research question is:
 | **Game Designers** | Ready-made mechanics for evaluating roleplay to integrate into games |
 | **AI Engineers** | Protocol for collecting labeled data for training models to recognize congruence |
 
-### Name Breakdown (Process-Oriented)
 
-| Letter | Meaning | Description |
-|---|---|---|
-| **B** | Believe / Don't Believe | Binary voting mechanism |
-| **I** | Information | Presenting information for evaluation |
-| **V** | Voting | Group voting |
-| **R** | Record | Recording results |
-| **E** | Evaluate | Determining the verdict by majority |
-| **S** | Store | Saving the structured log |
-| **T** | Transfer | Transferring data for analysis |
 
 ---
 
