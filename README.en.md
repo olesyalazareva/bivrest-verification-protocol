@@ -1,126 +1,238 @@
-# BIVREST — Ground Truth Generator for AI
+# BIVREST — Group Assessment Protocol for Role-Based Behavior
 
-**Behavioral Verification through Role-Play and Binary Assessment**
+**Version:** 1.0
 
-**The Problem:** AI engineers and researchers spend months and hundreds of thousands of dollars on manual data labeling to train deception detection and emotion recognition models. Public datasets are almost non-existent, and those that exist are synthetic or low-quality.
-
-**What BIVREST does:** It's a ready-to-use protocol that **generates labeled data automatically** through a game with "Believe / Don't Believe" mechanics. Every player action receives an objective binary label without expert involvement.
-
-**The Result:** You get a high-quality dataset with real behavioral responses for AI training in **hours, not months**, and without manual labeling.
-
-[![License: Custom](https://img.shields.io/badge/License-NonCommercial--with--attribution-blue.svg)](./LICENSE)
-[![Status](https://img.shields.io/badge/Status-Deposited%20(NRIS)-green)](./LICENSE)
 
 ---
 
-## 🎯 Who Is This For
+## 1. The Problem BIVREST Solves
 
-- **AI/ML Engineers** — get ready-to-use labeled datasets for model training
-- **R&D Teams** — get an objective assessment tool without manual labeling
-- **Researchers** — study emotional authenticity and defense mechanisms through gameplay
+**The problem:** In role-playing games and research sessions, it is difficult to objectively assess the quality of performance. The facilitator's assessment is subjective, participants lack a unified criterion, and data is hard to structure and compare.
 
----
+Conventional data collection methods (interviews, surveys, focus groups) produce distorted results due to social desirability bias. Participants say what is "acceptable" rather than what they actually think.
 
-## 🔥 What Problem Does BIVREST Solve
+**What BIVREST offers:** A unified assessment mechanism through group voting. The group votes "Believe / Don't Believe" after each action. The verdict is determined by majority. The result is recorded in a structured log.
 
-| **Problem** | **Traditional Approach** | **BIVREST** |
-|:---|:---|:---|
-| Where to get data? | Hire dozens of people for manual labeling | Game session automatically generates labels |
-| Subjectivity | Labelers make mistakes or have bias | Binary "Believe/Don't Believe" voting gives objective results |
-| Cost | Thousands of dollars for labeled datasets | Minimal costs to organize a game |
-| Time | Months to collect and label | Data collected in real-time during one session |
+**This protocol is designed for collecting data in situations where conventional methods (interviews, surveys) produce distorted results due to social desirability bias.** Role-playing reduces this effect because the participant acts as a character, not as themselves.
 
 ---
 
-## 🧠 How It Works
+## 2. What Is BIVREST
 
-1. **Game Session:** 2–6 people play a role-playing game with avatars. Each turn is an action from the character's perspective.
+BIVREST is a data collection protocol using role-playing. It is built on a binary voting mechanism: **"Believe / Don't Believe"**.
 
-2. **Binary Voting:** After each action, the group votes **"Believe"** or **"Don't Believe"**.
+The protocol records:
+- participant actions
+- group voting results
+- final verdict
 
-3. **Penalty for Role Mismatch:** If the majority says "Don't Believe" — the player loses a resource. The penalty is **not for truth or lies**, but for **fantasy that doesn't fit the role**. This creates a natural incentive to be emotionally authentic.
+All of this is saved in a structured log.
 
-4. **Empty Chair:** After two "Don't Believe" votes in a row, the player steps out of their role and speaks as themselves. The AI gets a benchmark example of an honest response.
+**Name breakdown:**
 
-5. **Ready Dataset:** Every action, vote, and result is logged in a structured format (CSV/JSON). The output is a dataset with fields: `action`, `verdict` (Believe/Don't Believe), `player_id`, `avatar`.
-
----
-
-## 📦 What's Included
-
-- **`/protocol`** — full BIVREST method description (7 steps, 7 differences, pseudocode, API reference)
-- **`/game`** — "Universe 69" game (rules, cards, avatars)
-- **`/annotation-guide`** — guide for annotating data for AI
-- **`/logs`** — example raw session log ([view example](./logs/session_example.en.txt))
-
----
-
-## 🆚 How BIVREST Compares to Alternatives
-
-| **BIVREST** | **Psychodrama / CBT** |
-|:---|:---|
-| Avatar is maximally different from self | Role is close to self |
-| Binary verification without a therapist | Authoritative verdict by an expert |
-| Penalty for role mismatch | No penalty — safe to lie |
-| Uses an AI "double" for the empty chair | Requires the presence of a second person |
-| Enforces role switching | Can hide behind a mask indefinitely |
+| Letter | Meaning | Description |
+|---|---|---|
+| **B** | Bifurcation | Split between the "Self" and avatar |
+| **I** | Inversion | Acting through the opposite role |
+| **V** | Verification | "Believe / Don't Believe" mechanism |
+| **R** | Role | Avatar as a protective screen |
+| **E** | Empty | Deconstruction through the "Empty Chair" |
+| **S** | Script | Scenario to be deconstructed |
+| **T** | Therapy | Integration of a new scenario |
 
 ---
 
-## 🚀 How to Use the Method
+## 3. Who BIVREST Is For
 
-1. **Study** the full protocol in [`protocol/BIVREST_method.en.md`](./protocol/BIVREST_method.en.md)
-2. **Organize** pilot sessions following the structured game rules
-3. **Collect** raw action logs and "Believe / Don't Believe" votes from participants
-4. **Annotate** the data using the guide in [`annotation-guide/README.en.md`](./annotation-guide/README.en.md)
-5. **Train** your AI models on this behavioral dataset
+| Audience | Purpose |
+|---|---|
+| **Researchers** | Collecting structured data on role-based behavior where social desirability interferes with obtaining truthful responses |
+| **Psychologists** | Recording group dynamics and moments of role exit |
+| **Game Designers** | A ready-made performance assessment mechanic for embedding into games |
+| **AI/ML Engineers** | A protocol for collecting labeled data for model training |
 
----
+### 3.1. Key Differences from Alternatives
 
-## 🎮 Connection to UNIVERSE 69 Game
-
-BIVREST and **UNIVERSE 69** are two complementary projects:
-
-| **BIVREST** | **UNIVERSE 69** |
-|:---|:---|
-| Ground truth data generator for AI | LLM-native role-play game engine |
-| Deception detection & emotion recognition training | Context drift & hallucination prevention |
-| Protocol with binary verification | UNO card mechanics as structural container |
-| For AI/ML engineers and researchers | For game designers, psychologists, and developers |
-
-**How to use them together:**
-1. Use **UNIVERSE 69** for conducting role-play sessions with LLM
-2. Apply **BIVREST** protocol for verification and data collection
-3. Train your models on annotated data generated from the game
-
-**Link to project:** [UNIVERSE 69 on GitHub](https://github.com/olesyalazareva/universe69)
+| Parameter | BIVREST | Psychodrama / CBT / Focus Groups |
+|---|---|---|
+| **Avatar** | Maximally different from self | Role is close to self or absent |
+| **Verification** | Binary group voting | Authoritative verdict of expert / facilitator |
+| **Penalty** | For role mismatch — loss of resource | No penalty — may perform unconvincingly |
+| **Empty Chair** | On repeated "Don't Believe" — exit from role | Requires presence of a second person (in psychodrama) |
+| **Role Change** | Mandatory (via game mechanics) | Can hide behind the mask indefinitely |
+| **Data Format** | Structured log (JSON/CSV) | Qualitative description, difficult to structure |
 
 ---
 
-## 🔬 Example Use Cases
+## 4. How BIVREST Works
 
-- **Training an LLM** to detect subtle emotional cues in text
-- **Developing a model** to distinguish between genuine and deceptive statements
-- **Building a behavioral dataset** for research on human-AI interaction and trust
+### 4.1. Protocol Participants
+
+| Role | Description |
+|---|---|
+| **Group** | Minimum 3 people, vote after each action |
+| **Observer** | Records voting results and maintains the log |
+| **Facilitator** | Manages the session, assigns tasks (optional) |
+
+### 4.2. Voting Criteria
+
+BIVREST does not prescribe a specific criterion — it is defined before the start of work.
+
+**Examples of criteria:**
+- "Does this action match the role?"
+- "Does this look convincing?"
+- "Is this truthful within the game's context?"
+
+The group votes "Believe / Don't Believe" relative to the specified criterion.
+
+### 4.3. Protocol Stages
+
+| Letter | Stage | Action |
+|---|---|---|
+| **B** | Believe / Don't Believe | The group votes according to the specified criterion |
+| **I** | Information | Information is presented for assessment |
+| **V** | Voting | Each participant casts their vote |
+| **R** | Record | Voting results are recorded |
+| **E** | Evaluate | Verdict is determined by majority |
+| **S** | Store | Structured log is saved |
+| **T** | Transfer | Data is handed over for analysis |
+
+### 4.4. Full Cycle of One Iteration
+Participant Action → Group Voting → Result Recording → Log
+
+text
+
+Each iteration produces one entry in the log.
 
 ---
 
-## 👩‍💻 Author & Contact
+## 5. Implementation of BIVREST in the UNIVERSE 69 Game
 
-**Olesya Lazareva**  
-Psychoanalyst-sexologist, Game Technician with 25+ years of practice
+UNIVERSE 69 is a game in which BIVREST is embedded as a built-in mechanism. The full rules, cards, and roles are in a separate repository:
 
-- **Telegram:** [@olesyalazarevalove](https://t.me/olesyalazarevalove)
-- **Email:** [psi-tech@yandex.com](mailto:psi-tech@yandex.com)
-- **Method Status:** Deposited in the National Register of Intellectual Property (NRIS)
+**→ [UNIVERSE 69 on GitHub](https://github.com/olesyalazareva/universe69)**
+
+### 5.1. How BIVREST Is Embedded in UNIVERSE 69 Mechanics
+
+| UNIVERSE 69 Mechanic | Role in BIVREST |
+|---|---|
+| **Task cards** | Generate information for assessment (stage I — Information) |
+| **Avatars (roles)** | Provide context for evaluation |
+| **"Believe / Don't Believe" voting** | Core verification mechanism (stage B — Believe) |
+| **"Chance" tokens** | Resource lost on "Don't Believe" (penalty mechanism) |
+| **"Empty Chair"** | Exit from role on repeated "Don't Believe" (stage E — Empty) |
+| **Logging** | Recording all actions and votes (stages R, E, S) |
+
+### 5.2. Game Cycle with BIVREST
+Player chooses an avatar (role)
+
+Player receives a task card
+
+Player performs the task as their avatar
+
+Group votes "Believe" or "Don't Believe"
+
+If "Don't Believe" — player loses a "Chance" token
+
+If two "Don't Believe" in a row — player exits the role ("Empty Chair")
+
+Results are written to the log
+
+text
+
+### 5.3. What This Connection Provides
+
+| For the Game | For Research |
+|---|---|
+| Clear performance assessment criterion | Structured data |
+| Objectivity through group decision | Binary labels for model training |
+| Penalty for unconvincing performance | Recording of role-breakdown moments |
+| Role exit mechanics | Data on group dynamics |
+
+### 5.4. Log Format in UNIVERSE 69
+
+| Field | Type | Description |
+|---|---|---|
+| `session_id` | string | Session identifier |
+| `round` | integer | Round number |
+| `player_id` | string | Player identifier |
+| `avatar` | string | Player's role |
+| `task` | string | Card task |
+| `action_text` | text | Performance (what was said/done) |
+| `votes_believe` | integer | Number of "Believe" votes |
+| `votes_dont_believe` | integer | Number of "Don't Believe" votes |
+| `verdict` | string | "Believe" or "Don't Believe" |
+| `tokens_lost` | integer | Number of tokens lost |
+| `empty_chair` | boolean | Whether role was exited |
+
+BIVREST can be used with other role-playing systems, but in UNIVERSE 69 it is implemented as a complete mechanic.
 
 ---
 
-## 📄 License & Terms
+## 6. Limitations
 
-- **Non-Commercial Use:** Freely permitted for scientific research and open-source projects, provided that proper attribution is given and a link to this repository is included
-- **Commercial Use:** (e.g., selling AI solutions based on BIVREST, corporate implementation) requires explicit permission from the author
+- Voting results reflect the group's opinion, not objective truth
+- The protocol does not guarantee consistency of assessments across different groups
+- Multiple sessions are required for statistically significant data
+- No ready-made dataset is provided
 
 ---
 
-**⭐ If you find this method useful for your work, please star the repository — so others can find it too.**
+## 7. Citation
+
+```bibtex
+@misc{lazareva2025bivrest,
+  author = {Lazareva, Olesya},
+  title = {BIVREST: Group Assessment Protocol for Role-Based Behavior},
+  year = {2025},
+  howpublished = {GitHub},
+  url = {https://github.com/olesyalazareva/bivrest-method}
+}
+8. Repository Structure
+text
+bivrest-method/
+├── README.md                          # Full protocol description (Russian)
+├── README.en.md                       # Full protocol description (English)
+├── LICENSE                            # MIT License with commercial clause
+├── protocol_specification.md          # Technical specification (Russian)
+├── protocol_specification.en.md       # Technical specification (English)
+├── annotation_guide.md                # Data annotation guide (Russian)
+├── annotation_guide.en.md             # Data annotation guide (English)
+├── session_example.txt                # Sample log (Russian)
+├── session_example.en.txt             # Sample log (English)
+└── logs/                              # Folder for additional log examples
+8.1. File Contents
+File	Description
+README.md	Full protocol description: problem, audience, mechanics, limitations
+README.en.md	English version of README.md
+LICENSE	License agreement
+protocol_specification.md	Technical specification: log format, fields, data types, validation examples
+protocol_specification.en.md	English version of protocol_specification.md
+annotation_guide.md	Instructions for annotating collected data for model training
+annotation_guide.en.md	English version of annotation_guide.md
+session_example.txt	Example filled log from one session (Russian)
+session_example.en.txt	English version of session_example.txt
+logs/	Folder for storing additional log examples
+9. Use Cases
+Training LLMs to recognize subtle emotional signals in text
+
+Developing models for distinguishing genuine from deceptive statements
+
+Creating behavioral datasets for human-AI interaction research
+
+10. Author and Contact
+Olesya Lazareva
+Psychoanalyst-Sexologist, Game Technician with 25 years of experience
+
+Telegram: @olesyalazarevalove
+
+Email: psi-tech@yandex.com
+
+Method status: Registered in NRIS
+
+11. License and Terms
+Non-commercial use (scientific research, open-source projects) — free with mandatory attribution and link to this repository
+
+Commercial use (selling AI solutions based on BIVREST, corporate implementations) — by agreement with the author
+
+⭐ If this method is useful for your work, star the repository — so other researchers and engineers can find it.
