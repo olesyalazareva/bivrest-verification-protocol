@@ -1,3 +1,4 @@
+
 ---
 language: en
 tags:
@@ -5,12 +6,12 @@ tags:
   - psychological-research
   - research-methodology
   - group-dynamics
-  - llm-training-data
-  - ai-training-data
+  - congruence-assessment
   - role-playing-research
   - data-collection
   - verification-method
   - bivrest-method
+  - social-validation
 license: mit
 ---
 
@@ -26,7 +27,9 @@ license: mit
 
 ## 📑 Table of Contents
 
-- [Method Description](#method-description)
+- [The Problem](#the-problem)
+- [What BIVREST Offers](#what-bivrest-offers)
+- [What BIVREST Actually Measures](#what-bivrest-actually-measures)
 - [Who Is BIVREST For](#who-is-bivrest-for)
 - [How the Protocol Works](#how-the-protocol-works)
 - [Data Structure](#data-structure)
@@ -38,24 +41,60 @@ license: mit
 
 ---
 
-## Method Description
+## The Problem
 
-**The Problem:** In role-playing games and research sessions, it's difficult to objectively assess the quality of roleplay. The facilitator's assessment is subjective, participants lack unified criteria, and data is hard to structure and compare.
+In role-playing games and research sessions, it's difficult to assess how well a participant's behavior **matches their role**. Psychologists call this **congruence** — the alignment between actions and the expectations associated with a role.
 
-Traditional data collection methods (interviews, surveys, focus groups) produce distorted results due to social desirability bias. Participants say what is "socially acceptable" rather than what they actually think.
+**What researchers and facilitators typically face:**
 
-**What BIVREST Offers:** A unified assessment mechanism through group voting. The group votes "Believe / Don't Believe" after each action. The verdict is determined by majority vote. The result is recorded in a structured log.
+| Method | Problem |
+|---|---|
+| **Expert evaluation** | Subjective, depends on the facilitator's experience and preferences |
+| **Participant surveys** | Social desirability bias — participants say what is "acceptable" rather than what they actually think |
+| **Self-assessment** | Doesn't reflect group perception; gap between "how I intended to play" and "how I was perceived" |
+| **Open observation** | Data is hard to structure, compare, and analyze |
 
-**This protocol is designed for data collection in situations where conventional methods (interviews, surveys) produce distorted results due to social desirability.** Role-playing helps reduce this effect because participants act as characters, not as themselves.
+**The result:** no unified criterion, data is incomparable, and conclusions are built on subjective impressions.
 
-BIVREST is a data collection protocol based on role-playing games. It relies on the binary voting mechanism **"Believe / Don't Believe"**.
+---
 
-The protocol records:
-- participant actions
-- group voting results
-- final verdict
+## What BIVREST Offers
 
-All of this is saved in a structured log.
+BIVREST is a **data collection protocol** that standardizes the process of evaluating role-based behavior.
+
+**Core mechanism:**
+
+The group votes **"Believe / Don't Believe"** after each action. The voting criterion is **set before the session begins** and can be, for example:
+
+> *"Does this action match the role?"*
+
+Votes are counted, the verdict is determined by majority, and the result is recorded in a structured log.
+
+**Key idea:**
+
+Instead of asking the participant: *"How did you feel in the role?"* — we ask the group: *"Was this congruent with the role?"*
+
+This **shifts the focus** from self-assessment to **social perception** and produces data that can be statistically analyzed.
+
+---
+
+## What BIVREST Actually Measures
+
+**It's important to understand:** BIVREST does not claim to measure "objective truth." It measures **group perception**.
+
+| What BIVREST Provides | What BIVREST Does NOT Provide |
+|---|---|
+| Socially validated assessment of congruence | Objective truth about roleplay quality |
+| Structured data for analysis | A ready-made answer to "was it played well?" |
+| Ability to compare sessions with a fixed criterion | Comparison across different criteria |
+| Data on group dynamics and social expectations | Individual psychological diagnostics |
+
+**BIVREST is a tool for studying how a group perceives role-based behavior.**
+
+It is useful if your research question is:
+- "What actions does the group consider congruent with the role?"
+- "How does perception of a role change over time?"
+- "What causes misalignment between expectations and actions?"
 
 ---
 
@@ -63,22 +102,22 @@ All of this is saved in a structured log.
 
 | Audience | Purpose |
 |---|---|
-| **Researchers** | Collect structured data on role-based behavior in conditions where social desirability interferes with obtaining truthful responses |
-| **Psychologists** | Record group dynamics and moments of role breakdown |
+| **Researchers** | Collect structured data on role-based behavior and group perception |
+| **Psychologists** | Record group dynamics, study social expectations |
 | **Game Designers** | Ready-made mechanics for evaluating roleplay to integrate into games |
-| **AI Engineers** | Protocol for collecting labeled data for model training |
+| **AI Engineers** | Protocol for collecting labeled data for training models to recognize congruence |
 
-### Name Breakdown
+### Name Breakdown (Process-Oriented)
 
 | Letter | Meaning | Description |
 |---|---|---|
-| **B** | Bifurcation | Gap between the "Self" and the avatar |
-| **I** | Inversion | Acting through the opposite role |
-| **V** | Verification | "Believe / Don't Believe" mechanism |
-| **R** | Role | Avatar as a protective screen |
-| **E** | Empty | Deconstruction through the "Empty Chair" |
-| **S** | Script | The script to be deconstructed |
-| **T** | Therapy | Integration of a new script |
+| **B** | Believe / Don't Believe | Binary voting mechanism |
+| **I** | Information | Presenting information for evaluation |
+| **V** | Voting | Group voting |
+| **R** | Record | Recording results |
+| **E** | Evaluate | Determining the verdict by majority |
+| **S** | Store | Saving the structured log |
+| **T** | Transfer | Transferring data for analysis |
 
 ---
 
@@ -94,32 +133,35 @@ All of this is saved in a structured log.
 
 ### Voting Criterion
 
-BIVREST doesn't prescribe a specific criterion — it's set before the session begins.
+The criterion is **set before the session** and remains unchanged throughout the session.
 
-**Examples of criteria:**
-- "Does this action match the role?"
+**Recommended criterion for congruence research:**
+
+> *"Does this action match the role?"*
+
+**Other possible criteria (for other research tasks):**
+
 - "Does this look convincing?"
 - "Is this truthful in the game context?"
-
-The group votes "Believe / Don't Believe" according to the defined criterion.
+- "Would I believe the character would act this way?"
 
 ### Protocol Stages
 
 | Letter | Stage | Action |
 |---|---|---|
 | **B** | Believe / Don't Believe | The group votes according to the defined criterion |
-| **I** | Information | Presenting information for evaluation |
-| **V** | Voting | Each participant casts their vote |
-| **R** | Record | Recording the voting results |
-| **E** | Evaluate | Determining the verdict by majority |
-| **S** | Store | Saving the structured log |
-| **T** | Transfer | Transferring data for analysis |
+| **I** | Information | The participant presents an action (roleplay) |
+| **V** | Voting | Each participant casts their vote ("Believe" or "Don't Believe") |
+| **R** | Record | The observer records the results |
+| **E** | Evaluate | The verdict is determined by majority |
+| **S** | Store | Data is saved in a structured log |
+| **T** | Transfer | Data is prepared for analysis |
 
 ### Complete Iteration Cycle
 
 **Participant Action → Group Voting → Result Recording → Log Entry**
 
-Each iteration produces one entry in the log.
+Each iteration produces one row in the log.
 
 ---
 
@@ -138,7 +180,7 @@ Each iteration produces one entry in the log.
 | `votes_believe` | integer | Number of "Believe" votes |
 | `votes_dont_believe` | integer | Number of "Don't Believe" votes |
 | `verdict` | string | "Believe" or "Don't Believe" |
-| `tokens_lost` | integer | How many tokens were lost |
+| `tokens_lost` | integer | How many tokens were lost (if penalty system is used) |
 | `empty_chair` | boolean | Whether role exit occurred |
 
 **Example of a filled log:** [session_example.en.txt](session_example.en.txt)
@@ -153,21 +195,24 @@ Each iteration produces one entry in the log.
 This repository contains everything you need to conduct a research session.
 
 ### 2. Read the Key Documents
-- **[Protocol Specification](protocol_specification.en.md)** — technical details for researchers
-- **[Annotation Guide](annotation_guide.en.md)** — for those labeling data for AI
+- **[Technical Specification](protocol_specification.en.md)** — detailed rules and data formats
+- **[Annotation Guide](annotation_guide.en.md)** — for labeling data for AI tasks
 - **[Log Example](session_example.en.txt)** — what a filled record looks like
 
 ### 3. Conduct a Session
-1. Gather a group (minimum 3 people)
-2. Agree on a voting criterion (e.g., "Does the action match the role?")
-3. After each action — vote "Believe / Don't Believe"
-4. Record the results in the log (template available in `templates/`)
+
+1. **Gather a group** — minimum 3 people
+2. **Define the criterion** — for example: "Does this action match the role?"
+3. **Run a series of iterations** — 5–20 rounds
+4. **Record the results** — fill in the log after each action
 
 ### 4. Analyze the Data
-The resulting log can be used for:
-- Statistical analysis of behavior
-- Training LLMs to recognize persuasiveness
-- Group dynamics research
+
+The resulting log enables:
+
+- **Quantitative analysis** — frequencies, distributions, dynamics
+- **Comparative analysis** — across different roles and players
+- **Model training** — if you're labeling data for AI
 
 **If you need consultation on applying the method** — contact the author (contacts below).
 
@@ -183,23 +228,23 @@ UNIVERSE 69 is a game where BIVREST is built in as a core mechanic. Full rules, 
 
 | UNIVERSE 69 Mechanic | Role in BIVREST |
 |---|---|
-| **Task Cards** | Generate information for evaluation (Stage I — Information) |
-| **Avatars (Roles)** | Set the context in which actions are evaluated |
-| **"Believe / Don't Believe" Voting** | Core verification mechanism (Stage B — Believe) |
-| **"Chance" Tokens** | Resource lost on "Don't Believe" (sanction mechanism) |
-| **"Empty Chair"** | Role exit upon repeated "Don't Believe" (Stage E — Empty) |
-| **Logging** | Recording all actions and votes (Stages R, E, S) |
+| **Task Cards** | Generate information for evaluation (Stage I) |
+| **Avatars (Roles)** | Set the context for evaluating congruence |
+| **"Believe / Don't Believe" Voting** | Core verification mechanism (Stage B) |
+| **"Chance" Tokens** | Resource lost on "Don't Believe" |
+| **"Empty Chair"** | Role exit upon repeated "Don't Believe" |
+| **Logging** | Recording all actions and votes |
 
-BIVREST can be used with other role-playing systems, but in UNIVERSE 69 it's implemented as a ready-made mechanic.
+BIVREST can be used with any role-playing system — UNIVERSE 69 is an example of a ready-made implementation.
 
 ---
 
 ## Limitations
 
-- Voting results reflect group opinion, not objective truth
-- The protocol doesn't guarantee consistency of assessments across different groups
-- Multiple sessions are required for statistically significant data
-- A ready-made dataset is not provided
+- **Group assessment ≠ objective truth** — the result reflects the group's opinion, not absolute reality
+- **The criterion must be fixed** — if you change the criterion, data becomes incomparable
+- **Multiple sessions are required** — for statistically significant data
+- **Social desirability does not disappear** — it transforms into a desire to meet group expectations
 
 ---
 
