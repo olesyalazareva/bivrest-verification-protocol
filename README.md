@@ -1,18 +1,4 @@
 
----
----
-language: ru
-tags:
-  - behavioral-science
-  - psychological-research
-  - research-methodology
-  - group-dynamics
-  - congruence-assessment
-  - role-playing-research
-  - data-collection
-  - verification-method
-  - bivrest-method
-  - social-validation
 license: mit
 ---
 
